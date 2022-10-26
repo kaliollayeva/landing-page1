@@ -19,6 +19,10 @@
     margin-bottom: 150px;
 }
 
+.section4>img{
+    width: 100%;
+}
+
 .section4-img{
     display: flex;
     justify-content: space-between;

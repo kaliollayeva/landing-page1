@@ -86,3 +86,8 @@
       box-shadow: 0 20px 27px rgba(245, 56, 56, 0.35)
  }
 
+ @media (max-width:1086px){
+   .section3-item2>div{
+      padding: 20px;
+   }
+ }

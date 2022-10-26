@@ -1,8 +1,9 @@
 
-.header{
+.header>div:first-child{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header-item1{
@@ -25,6 +26,10 @@
     font-size: 16px;
 }
 
+.header-item2-clone{
+    display: none;
+}
+
 .header-item3{
     display: flex;
     justify-content: space-between;
@@ -42,11 +47,11 @@
 
 .header-item3 button{
     height: 45px;
+    width: 100px;
 
     border-radius: 30px;
     border: 1px solid #F53855;
     background-color: inherit;
-    padding: 13px 45px;
 
     color: #F53855;
     font-size: 16px;
@@ -60,3 +65,37 @@
     color: #fff;
 }
 
+@media(max-width:920px){
+    .header-item2{
+        display: none;
+    }
+
+    .header-item2-clone{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        padding: 2%;
+        margin-top: 20px;
+        background-color: #e1e1e1;
+    }
+}
+
+@media(max-width:440px){
+    .header-item1, .header-item2-clone, .header-item3 p, .header-item3 button{
+        font-size: 13px;
+    }
+    .header-item1 img{
+        width: 30px;
+        height: 31px;
+    }
+}
+
+@media(max-width:350px){
+    .header-item3 p{
+        display: none;
+    }
+    .header-item3 button{
+        height: 35px;
+    }
+}
